@@ -1,0 +1,61 @@
+// scss -> rule -> @...
+//=====================================
+// ----------- if ---------------------
+// 1. @if (expression){ //code }
+
+// $score: 9;
+
+// @if ($score >= 10) {
+//     body {
+//         background: green;
+//     }
+// } @else {
+//     body {
+//         opacity: 0;
+//     }
+// }
+// @if ($score == 9) {
+//     body {
+//         background-color: gray;
+//     }
+// }
+
+// -------------------------
+// 2. @if (expression){//code}@else {}
+
+// $score: 12;
+
+// @if ($score >= 10) {
+//     body {
+//         background: green;
+//     }
+// } @else {
+//     body {
+//         background: red;
+//     }
+// }
+//-------------------------------
+// 3. @if(expression){//code} @else if(expression){//code}@else{}
+
+// $score: 9;
+
+// @if ($score >= 10) {
+//     body {
+//         background: green;
+//     }
+// } @else if($score == 9) {
+//     body {
+//         background: yellow;
+//     }
+// } @else {
+//     body {
+//         background: red;
+//     }
+// }
+//----------------------------
+// 4. if( expression , true, false )
+$score: 10;
+
+body {
+    background: if($score >= 10, green, null);
+}

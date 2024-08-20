@@ -1,0 +1,77 @@
+// method map
+
+@use "sass:map";
+
+// 1: merge( $map-1 , $map-2 )
+
+// $breakpoint1: (
+//     sm:576,
+//     md:768
+// );
+// $breakpoint2: (
+//     lg:992,
+//     xl:1200,
+//     xxl:1400
+// );
+
+// $result: map.merge($breakpoint1,$breakpoint2);
+// @debug $result;
+//----------------------------------------------------
+
+// 2: has-key($map,$key) -> boolean
+
+// @debug map.has-key($breakpoint1, lg)
+//----------------------------------------------------
+// 3: remove($map , key) ->
+
+// $result: map.remove($breakpoint2, xxl , xl);
+// @debug $result;
+//----------------------------------------------------
+// 4: keys($map)
+// 5: values($map)
+
+// $breakpoint: (
+//     lg:992,
+//     xl:1200,
+//     xxl:1400
+// );
+
+// @debug map.values($breakpoint);
+// @debug map.keys($breakpoint);
+//----------------------------------------------------
+// get( $map , $key )
+// set( $map , $key , value )
+
+// $breakpoint: (
+//     lg:992,
+//     xl:1200,
+//     xxl:1400
+// );
+
+// // $result: map.get($breakpoint , lgs);
+// // @debug $result;
+
+// $result: map.set($breakpoint , xxxl , 1600);
+// @debug $result;
+
+//=======================================
+
+$breakpoint1: (
+    grid: (
+        sm: 576,
+        md: 768,
+        lg: 900
+    )
+);
+$breakpoint2: (
+    grid: (
+        lg: 992,
+        xl: 1200,
+        xxl: 1400
+    )
+);
+
+
+$result: map.deep-merge($breakpoint1, $breakpoint2);
+
+@debug $result;

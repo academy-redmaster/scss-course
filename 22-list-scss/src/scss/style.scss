@@ -1,0 +1,94 @@
+// datatype list
+// start index list in scss -> 1
+
+// $list-1: 2 3 4;
+// body {
+//     background: $list-1;
+//     color: type-of($value: $list-1);
+// }
+
+// $list-1: red green blue;
+// $list-2: red, green, blue;
+
+// $list-3: (red) (gray) (blue);
+
+// $list-4: (red), (black) (white);
+
+// $list-5: [red blue white];
+
+// $list-6: [red, blue, white];
+
+// body {
+//     background: $list-6;
+//     color: type-of($value: $list-6);
+// }
+// ===========================================
+// nested list
+
+// $list-nested: red green blue , black white gray;
+
+// $item: nth($list-nested, 2);
+// $item: nth($item, 1);
+
+// body {
+//     background: $item;
+//     color: type-of($value: $item);
+// }
+// ===========================================
+// @each ->
+
+// $list: red green blue;
+
+// @each $item in $list {
+//     @debug $item;
+// }
+
+// ===========================================
+// method
+
+// nth( $name-list, index )
+
+// $list: red green blue;
+
+// @debug nth($list , 1);
+
+// ===========================================
+// append ( $name-list , new value)
+
+// $list: red green blue;
+
+// $list: append($list , gray);
+
+// body{
+//     background: $list;
+// }
+// ===========================================
+// index ( $name-list , value )
+
+// $list: red green blue;
+
+// $item: index($list, gray);
+
+// body {
+//     background: $item;
+// }
+// ===========================================
+// join ( $list1, $list,2 , ... , $separator , $brackets)
+
+// $list-1: red green blue;
+// $list-2: black white gray;
+
+// @debug join($list-1 , $list-2 , space, false)
+// ===========================================
+// length list
+
+// $list: red green blue gray;
+
+// @debug length($list: $list);
+// ===========================================
+//  set-nth ( $name-list, index , new value)
+
+// $list: red blue green;
+// $list: set-nth($list: $list, $n: 1, $value: black);
+
+// @debug $list;

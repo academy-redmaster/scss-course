@@ -1,0 +1,72 @@
+$grid-column: 12;
+$break-point: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
+$keys-bp: map-keys($break-point);
+$values-bp: map-values($break-point);
+$length-map: length($keys-bp);
+
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@for $i from 1 through $length-map {
+    $result: "";
+    @media screen and (min-width: nth($values-bp,$i)) {
+        @for $j from 1 through $i {
+            $result: $result + "," + (".container-" + nth($keys-bp, $j));
+        }
+        .container,
+        #{$result} {
+            max-width: floor(calc(nth($values-bp, $i) / 1.066));
+        }
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 0 1 auto;
+    margin: 0 -15px;
+
+    > * {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@for $i from 1 through $grid-column {
+    $width: percentage(calc($i / $grid-column));
+    .col-#{$i} {
+        max-width: $width;
+        flex: 0 0 auto;
+    }
+}
+
+@each $name, $size in $break-point {
+    @media screen and (min-width: $size) {
+        @for $i from 1 through $grid-column {
+            $width: percentage(calc($i / $grid-column));
+            .col-#{$name}-#{$i} {
+                max-width: $width;
+                flex: 0 0 auto;
+            }
+        }
+    }
+}

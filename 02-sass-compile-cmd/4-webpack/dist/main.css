@@ -1,0 +1,32 @@
+/*!************************************************************************************************************************!*\
+  !*** css ../../../../node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss ***!
+  \************************************************************************************************************************/
+header ul {
+  list-style: none;
+}
+header ul li {
+  border: 3px solid black;
+}
+header ul li a {
+  color: red;
+  font-size: 5rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+body h1 {
+  color: #8a8dff;
+  font-size: 4rem;
+  font-weight: bold;
+}

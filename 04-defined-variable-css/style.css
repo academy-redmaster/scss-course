@@ -1,0 +1,32 @@
+@property --color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #fff;
+}
+
+/* :root {
+    --color: red;
+} */
+:root {
+    --font-size: 4rem;
+}
+
+h1 {
+    color: var(--color);
+}
+
+body {
+    background: var(--bg-color, #333);
+}
+
+.container {
+    --color: orange;
+    --bg-color: green; /* local variable */
+}
+
+h3 {
+    color: var(--color);
+    /* background: var(--bg-color); */
+    --font-size: var(--font-size) + 2rem;
+    font-size: var(--font-size);
+}

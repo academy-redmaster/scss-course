@@ -1,0 +1,7 @@
+//* !global !default !important
+$padding: null;
+$padding: 10px !default;
+
+body {
+    padding: $padding;
+}

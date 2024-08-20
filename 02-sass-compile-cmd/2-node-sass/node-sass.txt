@@ -1,0 +1,7 @@
+node-sass cmd
+
+-r -> resource
+-o -> output
+-w -> watch
+
+node-sass -r address_file_scss -o name_folder_css -w

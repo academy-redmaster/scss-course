@@ -1,0 +1,109 @@
+// 1. defined variable scss
+//  $name_variable : value;
+
+// $color: red;
+
+// body{
+//     background: $color;
+// }
+//===============================================
+// 2. scss - = _
+
+// $color: red;
+// $text-color: #00f;
+
+// body {
+//     background: $color;
+
+//     h1{
+//         color: $text_color;
+//     }
+// }
+//===============================================
+// 3. scss -> case sensitive  A != a
+
+// $color: blue;
+
+// body {
+//     background: $Color;
+// }
+//===============================================
+// 4. local variable and global variable
+
+// $color: red; // global variable
+
+// body {
+//     $color: yellow; // local variable
+//     // background: $color;
+// }
+
+// h1 {
+//     color: $color;
+// }
+
+// .container {
+//     $color: green;
+// }
+// h3 {
+//     color: $color;
+// }
+
+//=================================================
+// 5. convert local variable to global variable -> !global
+
+// $color: red; // global variable
+
+// body {
+//     $color: yellow !global; // local variable
+//     // background: $color;
+// }
+
+// h1 {
+//     color: $color;
+// }
+//=================================================
+// private variable
+// $_name-variable: value;
+// $color: red;
+
+// @import "./header";
+
+// body {
+//     color: #fff;
+//     background: $color;
+// }
+
+//=================================================
+// end
+// $color: red;
+// $font-size: 4rem;
+// $text-color: null;
+
+// body {
+//     background: $color;
+// }
+
+// h3 {
+//     $font-size: $font-size + 5rem;
+//     font-size: $font-size;
+//     color: $text-color;
+// }
+// h1{
+//     color: #fff;
+//     font-size: 3rem;
+//     padding: 2rem;
+// }
+//=================================================
+
+$text-color: #000;
+
+footer {
+    background: $text-color;
+}
+
+$text-color: #000;
+$footer-bg: $text-color;
+
+footer {
+    background: $footer-bg;
+}

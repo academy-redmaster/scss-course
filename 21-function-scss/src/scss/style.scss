@@ -1,0 +1,28 @@
+// @function ->
+
+/*
+? syntax function
+
+* define function
+@function name-function (parameters) {
+    // block code function
+    @return ....
+}
+
+* call function
+name-function(arguments)
+
+*/
+
+@function sum($a:4, $b:5) {
+    $result: $a + $b;
+    @return $result;
+}
+
+// body {
+//     padding: sum(10, 20) + 0px;
+//     color: rgba(20, 20, 20, 0.5);
+// }
+body {
+    padding: sum() + 0px;
+}

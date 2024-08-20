@@ -1,0 +1,49 @@
+@use "sass:map";
+
+// datatype map
+// map -> key:value
+
+// $info: (
+//     name: "ali",
+//     age: 30,
+//     color: black
+// );
+
+// body{
+//     background: map-get($info,name);
+//     color: type-of($value: $info);
+// }
+
+//=====================================
+// breakpoint -> grid template
+
+// $breakpoint: (
+//     sm: 576,
+//     md: 768,
+//     lg: 992,
+//     xl: 1200,
+//     xxl: 1400
+// );
+
+//=====================================
+// each
+// $breakpoint: (
+//     sm: 576,
+//     md: 768,
+//     lg: 992,
+//     xl: 1200,
+//     xxl: 1400
+// );
+
+// @each $item in $breakpoint {
+//     @debug $item;
+//     @debug type-of($value: $item);
+//     @debug "--------------------------";
+// }
+
+// @each $key,$value in $breakpoint {
+//     @debug $key;
+//     @debug $value;
+//     @debug "--------------------------";
+// }
+//=====================================

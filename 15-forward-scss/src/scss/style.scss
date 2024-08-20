@@ -1,0 +1,7 @@
+@use "./theme";
+
+body{
+    background: theme.$bg-color;
+}
+
+@include theme.btn;

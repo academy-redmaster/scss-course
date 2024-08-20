@@ -1,0 +1,8 @@
+// $bg-color: red;
+
+// @import "./header";
+@import "./variable";
+
+body{
+    background: $_bg-color;
+}

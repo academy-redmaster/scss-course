@@ -1,0 +1,15 @@
+@forward "./var" with($text-color: gray);
+
+header {
+    background: black;
+    color: aqua;
+}
+
+@mixin btn {
+    .btn {
+        background: red;
+        color: blue;
+        display: flex;
+        padding: 1rem 2rem;
+    }
+}

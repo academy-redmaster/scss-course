@@ -1,0 +1,19 @@
+// @content;
+
+@mixin btn($w, $h) {
+    width: $w + 0px;
+    height: $h + 0px;
+    padding: 1rem 2rem;
+    @content;
+}
+
+button {
+    @include btn(100, 200) {
+        background: red;
+        color: green;
+    }
+}
+
+header {
+    @include btn(20, 40);
+}

@@ -1,0 +1,75 @@
+// @media -> responsive
+
+// @media only screen and (max-width:1200px){
+//     body{
+//         background: red;
+//     }
+// }
+
+// header {
+//     ul {
+//         li {
+//             a {
+//                 color: blue;
+//             }
+//         }
+//     }
+//     @media only screen and (max-width: 1200px) {
+//         & {
+//             background: red;
+//         }
+
+//         & ul li a {
+//             color: green;
+//         }
+//     }
+// }
+
+//============================
+// @keyframes -> animation
+
+// @keyframes animate {
+//     0%{
+//         transform: rotate(0deg);
+//     }
+//     100%{
+//         transform: rotate(360deg);
+//     }
+// }
+
+// header {
+//     li {
+//         a {
+//             @keyframes animate {
+//                 0% {
+//                     transform: rotate(0deg);
+//                 }
+//                 100% {
+//                     transform: rotate(360deg);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// footer{
+//     animation: animate 10s infinite;
+// }
+//=========================================
+// @supports ->
+
+// @supports (display: grid) {
+//     body {
+//         background: red;
+//     }
+// }
+// @supports not (display: grid) {
+//     body {
+//         background: red;
+//     }
+// }
+@supports (text-stroke: 4px navy) and (display: grid){
+    body {
+        background: red;
+    }
+}

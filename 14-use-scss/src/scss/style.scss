@@ -1,0 +1,13 @@
+// @use "./header";
+// @use "./variable" as var with($bg-color: red);
+// body {
+//     background: var.$bg-color;
+//     color: var.$text-color;
+// }
+
+@use "./variable" as var;
+
+body {
+    background: var.$color;
+    color: var.$text-color;
+}

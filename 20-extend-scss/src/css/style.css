@@ -1,0 +1,11 @@
+footer button,
+header button {
+    width: 100px;
+    height: 200px;
+    padding: 1rem 2rem;
+    color: #ff0;
+}
+header .btn {
+    color: aqua;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBR0EsNEJBQ0ksWUFDQSxhQUNBLGtCQUNBLFdBT0EsWUFDSSIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBAZXh0ZW5kXHJcbi8vIHBsYWNlaG9sZGVyIHNlbGVjdG9yIC0+ICVcclxuXHJcbiVidG4ge1xyXG4gICAgd2lkdGg6IDEwMHB4O1xyXG4gICAgaGVpZ2h0OiAyMDBweDtcclxuICAgIHBhZGRpbmc6IDFyZW0gMnJlbTtcclxuICAgIGNvbG9yOiB5ZWxsb3c7XHJcbn1cclxuXHJcbmhlYWRlciB7XHJcbiAgICBidXR0b24ge1xyXG4gICAgICAgIEBleHRlbmQgJWJ0bjtcclxuICAgIH1cclxuICAgIC5idG4ge1xyXG4gICAgICAgIGNvbG9yOiBhcXVhO1xyXG4gICAgfVxyXG59XHJcblxyXG5mb290ZXIge1xyXG4gICAgYnV0dG9uIHtcclxuICAgICAgICBAZXh0ZW5kICVidG47XHJcbiAgICB9XHJcbn1cclxuXHJcbiJdfQ== */

@@ -1,0 +1,13 @@
+button {
+    width: 100px;
+    height: 200px;
+    padding: 1rem 2rem;
+    background: red;
+    color: green;
+}
+header {
+    width: 20px;
+    height: 40px;
+    padding: 1rem 2rem;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBU0EsT0FOSSxZQUNBLGFBQ0Esa0JBTUksZUFDQSxZQUlSLE9BYkksV0FDQSxZQUNBIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIEBjb250ZW50O1xyXG5cclxuQG1peGluIGJ0bigkdywgJGgpIHtcclxuICAgIHdpZHRoOiAkdyArIDBweDtcclxuICAgIGhlaWdodDogJGggKyAwcHg7XHJcbiAgICBwYWRkaW5nOiAxcmVtIDJyZW07XHJcbiAgICBAY29udGVudDtcclxufVxyXG5cclxuYnV0dG9uIHtcclxuICAgIEBpbmNsdWRlIGJ0bigxMDAsIDIwMCkge1xyXG4gICAgICAgIGJhY2tncm91bmQ6IHJlZDtcclxuICAgICAgICBjb2xvcjogZ3JlZW47XHJcbiAgICB9XHJcbn1cclxuXHJcbmhlYWRlciB7XHJcbiAgICBAaW5jbHVkZSBidG4oMjAsIDQwKTtcclxufVxyXG4iXX0= */

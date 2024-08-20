@@ -1,0 +1,116 @@
+// rgba()
+// body {
+//     background: rgba(#000, 0.5);
+// }
+// ===================================
+// min max  => px rem em %
+// 35px 2rem ->
+// 20px 2% ->
+// body {
+//     h1 {
+//         font-size: min(10px, 200px);
+//     }
+//     .container{
+//         // font-size: 2px;
+//     }
+//     h3 {
+//         font-size: max(30px, 4em);
+//     }
+// }
+// ===================================
+// calc()
+// $font-size: 1rem;
+
+// body {
+//     h1 {
+//         font-size: calc($font-size + 0.2rem);
+//     }
+//     h3 {
+//         font-size: calc($font-size - 0.2rem);
+//     }
+// }
+// ===================================
+// clamp() -> clamp(min, value, max)
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+//     &::before,
+//     &::after {
+//         margin: 0;
+//         padding: 0;
+//         box-sizing: border-box;
+//     }
+// }
+// body {
+//     width: 100vw;
+//     max-width: 100%;
+//     height: 100vh;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     background: red;
+
+//     .container {
+//         width: 100%;
+//         height: 80%;
+//         background: blue;
+
+//         img {
+//             width: clamp(600px, 100%, 1200px);
+//             height: inherit;
+//             object-fit: cover;
+//         }
+//     }
+// }
+//=============================================
+// mix() -> mix(color 1, color 2 ,  50%)
+// $bg-color: #000;
+// $text-color: #eee;
+// $border-color: mix($bg-color, $text-color, 85%);
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+//     &::before,
+//     &::after {
+//         margin: 0;
+//         padding: 0;
+//         box-sizing: border-box;
+//     }
+// }
+// body {
+//     width: 100vw;
+//     max-width: 100%;
+//     height: 100vh;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     background: $bg-color;
+
+//     h1 {
+//         color: $text-color;
+//         padding: 10px;
+//         border: 10px solid $border-color;
+//     }
+// }
+//=============================================
+// saturate(color,%)
+
+// body {
+//     background: saturate(#f3f3f3, 0%);
+// }
+//=============================================
+// lighten(color,%)
+
+// body {
+//     background: lighten(#ff0000, 20%);
+// }
+//=============================================
+// darken(color,%)
+
+body {
+    background: darken(#ff0000, 40%);
+}

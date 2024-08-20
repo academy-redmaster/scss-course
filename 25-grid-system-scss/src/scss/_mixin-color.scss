@@ -1,0 +1,17 @@
+@mixin generate-color($color_name, $color) {
+    @for $i from 1 through 9 {
+        .bg-#{$color_name}-#{$i*100} {
+            background: rgba($color: $color, $alpha: calc($i / 10));
+        }
+    }
+    @for $i from 1 through 9 {
+        .text-#{$color_name}-#{$i*100} {
+            color: rgba($color: $color, $alpha: calc($i / 10));
+        }
+    }
+}
+
+@include generate-color(red, #ff0000);
+@include generate-color(orange, #FF6D28);
+@include generate-color(dark, #04293A);
+@include generate-color(light, #F9F9F9);

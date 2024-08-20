@@ -1,0 +1,142 @@
+// @mixin ->
+//===========================
+//1
+/*
+// ***** define mixin
+@mixin name-mixin {
+    code
+}
+//**** call mixin
+@include name-mixin;
+
+*/
+
+// @mixin btn {
+//     width: 100px;
+//     height: 150px;
+//     font: {
+//         size: 1.2rem;
+//         weight: bold;
+//     }
+//     padding: 1rem 2rem;
+// }
+
+// button{
+//     @include  btn;
+// }
+//===========================
+//2
+
+// @mixin btn {
+//     .btn {
+//         width: 100px;
+//         height: 150px;
+//         font: {
+//             size: 1.2rem;
+//             weight: bold;
+//         }
+//         padding: 1rem 2rem;
+//     }
+// }
+
+// @include btn;
+//===========================
+//3
+/*
+
+@mixin name-mixin (parameters) {
+    code
+}
+
+@include name-mixin (arguments)
+
+*/
+
+// @mixin btn($w, $h) {
+//     width: $w + 0px;
+//     height: $h + 0px;
+//     font: {
+//         size: 1.2rem;
+//         weight: bold;
+//     }
+//     padding: 1rem 2rem;
+// }
+
+// button {
+//     @include btn(100, 150);
+// }
+
+// header {
+//     button {
+//         @include btn(150, 300);
+//     }
+// }
+
+// @mixin btn($w, $h) {
+//     .btn {
+//         width: $w + 0px;
+//         height: $h + 0px;
+//         font: {
+//             size: 1.2rem;
+//             weight: bold;
+//         }
+//         padding: 1rem 2rem;
+//     }
+// }
+
+// @include btn(250, 300);
+//=========================================
+// default parameter -> (parameter , default parameter)
+
+// @mixin btn($w: 100, $h) {
+//     .btn {
+//         width: $w + 0px;
+//         height: $h + 0px;
+//         font: {
+//             size: 1.2rem;
+//             weight: bold;
+//         }
+//         padding: 1rem 2rem;
+//     }
+// }
+
+// @include btn();
+// @include btn;
+// @include btn(900,800);
+// @include btn($h:300);
+// @include btn($h: 600);
+// @include btn($h:900,$w:800);
+//=========================================
+// box-shadow (rest spread)
+
+// @mixin box-shadow($shadow...) {
+//     box-shadow: $shadow;
+// }
+
+// button {
+//     @include box-shadow(
+//         1px 1px 0 1px red,
+//         1px -1px 0 green,
+//         -1px 1px 0 blue,
+//         -1px -1px 0 1px black
+//     );
+// }
+
+// @mixin btn($w, $h) {
+//     .btn {
+//         width: $w + 0px;
+//         height: $h + 0px;
+//         font: {
+//             size: 1.2rem;
+//             weight: bold;
+//         }
+//         padding: 1rem 2rem;
+//     }
+// }
+
+// $size: 70 80;
+
+// button {
+//     @include btn($size...);
+// }
+//===============================

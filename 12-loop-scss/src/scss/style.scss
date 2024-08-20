@@ -1,0 +1,43 @@
+// loop -> @...
+//=============================
+// loop -> condition end
+//=============================
+// @while
+//@while expression {//code }
+
+
+// $count: 5;
+
+// @while ($count > 0) {
+//     @debug $count;
+//     $count: $count - 1;
+// }
+
+// $col: 1;
+
+// @while $col <= 12 {
+//     .col-#{$col} {
+//         width: (100% / 12) * $col;
+//     }
+//     $col: $col + 1;
+// }
+//===========================
+// for -> @..
+// @for $variable  form start to end { // code }
+// @for $variable  form start through end { // code }
+
+// @for $i from 0 to 5 {
+//     @debug $i;  // 0 1 2 3 4
+// }
+
+// @for $i from 0 through 5 {
+//     @debug $i;
+// }
+
+// @for $col from 1 through 12 {
+//     .col-#{$col} {
+//         width: calc(100% / 12) * $col;
+//     }
+// }
+// ==================================
+// @each

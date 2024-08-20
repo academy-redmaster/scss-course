@@ -1,0 +1,47 @@
+// @debug ->
+
+// $fos:1rem;
+
+// header{
+//     $fos:$fos+.2rem;
+
+//     ul{
+//         li{
+//             a{
+//                 @debug $fos+ " variable for font-size";
+//                 padding: 1rem;
+//             }
+//         }
+//     }
+// }
+
+// @mixin padding($p-x , $p-y) {
+//     $p:$p-x + $p-y;
+//     @debug "the variable p in mixin padding #{$p}"
+// }
+
+// @include padding(1px , 1in)
+//===========================================
+// @warn ->
+
+// .btn{
+//     padding: 1rem 2rem;
+//     @warn "create shadow for btn";
+//     width: 100px;
+// }
+//===========================================
+// @error ->
+
+$x: 110;
+
+@if $x <= 10 {
+    body {
+        background: red;
+    }
+} @else {
+    @error "x is bigger";
+}
+
+header {
+    padding: 1rem;
+}

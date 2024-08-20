@@ -1,0 +1,70 @@
+//*======== datatype =============
+//1: number  -2 , 0 , 2 , 5e2=500
+
+// $number: -2;
+// $number: 0;
+// $number: 2;
+// $number: 5e2;
+
+// px rem em % ch vh vw ,...
+
+// $number:5e2px;
+
+// body {
+//     padding: $number;
+//     background: type-of($number);
+// }
+//=========================================
+// 2: string  -> list character
+// character -> a , b ,...z
+// ali
+
+// 2.1 -> 'ali shahbaz'
+// 2.2 -> "ali"
+// 2.3 -> ali -> not start character value number 2ali , true , false , color,null
+
+// $string: 'ali'; single quotation
+// $string: "ali"; double quotation
+// $string: ali;
+
+// body {
+//     color: $string;
+//     background: type-of($string);
+// }
+
+//==============================================
+// boolean -> bool
+// true , false
+
+// $bool: true;
+// $bool: false;
+
+// body {
+//     color: $bool;
+//     background: type-of($bool);
+// }
+//==============================================
+// color
+// red ,green , blue ,gray,....
+// #323 , #332233 #33223300 -> 00-ff
+// rgb ,rgba ,hsl,...
+
+// $bg-color:red;
+// $bg-color:#323;
+// $bg-color:#33223302;
+// $bg-color:rgb(22,33,22);
+// $bg-color: rgba(22, 33, 22, 0.5);
+
+// body {
+//     color: $bg-color;
+//     background: type-of($value: $bg-color);
+// }
+//==============================================
+// null &
+// $test: null;
+$test: 1;
+
+body {
+    color: $test;
+    background: type-of($test);
+}
